@@ -30,12 +30,20 @@
 * [`License`](#license)
 
 <a name="why"></a>
- ## Why?? 🚩
-
-I am a ***CTF player*** who often finds myself without my main laptop in places that lack the tools I need. Some distros don't carry the packages I require and some doesn't keep them updated. That's why I created my own package manager :). It fetches tool binaries easily, ensuring I always have what I need to compete.
-
-<sup><sub>Dont touch my shrug</sub></sup>
-
+ ### Why?? 🚩
+1. **`Agnostic`**
+> [Hysp](https://github.com/pwnwriter/hysp) will work Wherever `(OS || Architecture)` & However `(Dependencies)` you want it to work. Read [how to configure hysp to your needs](https://github.com/pwnwriter/hysp#hosting-custom-repo-)
+2. **`No Prerequistes/Dependencies`**
+> Neither [Hysp](https://github.com/pwnwriter/hysp) nor [hysp-pkgs](https://github.com/metis-os/hysp-pkgs) require any prerequistes. You just install Hysp as a [single binary](#installation) & that's all. This means you do not need go or rust or anything else installed to install something. No dependencies whatsoever. This saves enormous space, storage & time.
+3. **`Self Hostable`**
+> Pkg-Source can be [self-hosted by anyone](https://github.com/pwnwriter/hysp#hosting-custom-repo-) and hysp can be configured to use that instead of the default source.
+4. **`Statically Compiled/Linked`** **Binaries** by Default
+> The [default pkgs](https://github.com/metis-os/hysp-pkgs) contain _only statically linked binaries that will run anywhere_. You can always host dynamic or whatever you want, but ***Hysp will always ship portable statically linked binaries only.*** 
+5. **`No Special Perms/Privileges`**
+> [Hysp](https://github.com/pwnwriter/hysp) requires no special perms or privileges. It can run completely in userspace with all of it's features.
+6. **`Large Collection of PKGs`** 
+> [hysp-pkgs](https://github.com/metis-os/hysp-pkgs) contains [hundreds](https://github.com/metis-os/hysp-pkgs#-status) of pre-compiled (all statically linked) packages.
+> Check the complete lists: [**`amd ||x86_64 Linux`**](https://github.com/metis-os/hysp-pkgs/tree/main/data/x86_64) `|` [**`aarch64 || arm64 Linux`**](https://github.com/metis-os/hysp-pkgs/tree/main/data/aarch64_arm64)
 
 <a name="installation"></a>
  ## Installation 📩
